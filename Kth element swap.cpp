@@ -23,5 +23,4 @@ using namespace std;
             cout<<a[i];
         }
         
-    
 }
