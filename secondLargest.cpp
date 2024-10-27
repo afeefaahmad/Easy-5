@@ -44,3 +44,45 @@ int main() {
     }
     return 0;
 }
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+    1.Without considering having no second largest element i.e. when all elements equal
+    2.Wihtout considering if only on element i.e. single element
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int findSecondLargest(vector<int> &arr){
+    int largest = INT_MIN;
+    int secondLargest = INT_MIN;
+    
+    for(int i=0; i<arr.size(); i++) {
+        if(arr[i]>largest){
+            secondLargest = largest;
+            largest = arr[i];
+        }
+        if(arr[i]>secondLargest && arr[i]<largest) {
+            secondLargest = arr[i];
+        }
+    }
+    
+    return secondLargest;
+}
+int main() {
+    int n;
+    cout<<"Enter number of elemnts in array : ";
+    cin>>n;
+    
+    vector<int> arr(n);
+    cout<<"Enter elemnts of array :";
+    for(int i=0; i<n; i++) {
+        cin>>arr[i];
+    }
+    
+    int answer = findSecondLargest(arr);
+    cout<<"Second largest is: "<<answer;
+    
+    return 0;
+}
