@@ -1,5 +1,5 @@
 Q1.REVERSING ARRAY
-Q2.
+Q2.LARGEST ELEMENT ARRAY
 Q3.
 Q4.
 Q5.
@@ -7,7 +7,7 @@ Q5.
 
 
 A1.
-  #include <iostream>
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -44,4 +44,33 @@ int main() {
 }
 
 A2.
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int largestElement(vector<int> &arr) {
+	int largest = arr[0];
+	for(int i=1; i<arr.size();i++) {
+		if(arr[i]>largest ){
+			largest = arr[i];
+		}
+	}
+	return largest;
+}
+int main() {
+	int n;
+	cout<<"Enter no. of terms: ";
+	cin>>n;
+
+	vector<int> arr(n);
+	cout<<"Enter elements of array: ";
+	for(int i=0; i<n; i++){
+		cin>>arr[i];
+	}
+	cout<<"Largest element of array : "<<largestElement(arr);
+
+	return 0;
+
+}
   
