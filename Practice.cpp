@@ -1,8 +1,13 @@
 Q1.REVERSING ARRAY
 Q2.LARGEST ELEMENT ARRAY
 Q3.SMALLEST ELEMENT ARRAY
-Q4.
-Q5.
+Q4.SECOND LARGEST ELEMENT ARRAY
+Q5.SECOND SMALLEST ELEMENT ARRAY
+Q6.
+Q7.
+Q8.
+Q9.
+Q10.
 
 
 
@@ -107,4 +112,36 @@ int main() {
 }
 
 A4.
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int smallestElement(vector<int> &arr) {
+	int n= arr.size();
+	int smallest= arr[n-1];
+	for(int i=1; i<n; i++) {
+		if(arr[n-i]>smallest ){
+			smallest = arr[i];
+		}
+	}
+	return smallest;
+}
+int main() {
+	int n;
+	cout<<"Enter no. of terms: ";
+	cin>>n;
+
+	vector<int> arr(n);
+	cout<<"Enter elements of array: ";
+	for(int i=0; i<n; i++){
+		cin>>arr[i];
+	}
+	cout<<"Smallest element of array : "<<smallestElement(arr);
+
+	return 0;
+
+}
+
+A5.
   
