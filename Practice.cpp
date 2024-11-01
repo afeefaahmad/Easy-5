@@ -120,8 +120,8 @@ using namespace std;
 int smallestElement(vector<int> &arr) {
 	int n= arr.size();
 	int smallest= arr[n-1];
-	for(int i=1; i<n; i++) {
-		if(arr[n-i]>smallest ){
+	for(int i=0; i<n; i++) {
+		if(arr[i]<smallest ){
 			smallest = arr[i];
 		}
 	}
@@ -141,7 +141,43 @@ int main() {
 
 	return 0;
 
-}
+} 
 
 A5.
+	#include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int SsmallestElement(vector<int> &arr) {
+	int n= arr.size();
+	int secSmallest=INT_MAX;
+	int smallest= arr[n-1];
+	for(int i=0; i<n; i++) {
+		if(arr[i]<smallest ){
+			secSmallest=smallest;
+			smallest=arr[i];
+		}
+		else if(arr[i]>smallest && arr[i]<secSmallest){
+			secSmallest = arr[i];
+		}
+	}
+	return secSmallest;
+}
+int main() {
+	int n;
+	cout<<"Enter no. of terms: ";
+	cin>>n;
+
+	vector<int> arr(n);
+	cout<<"Enter elements of array: ";
+	for(int i=0; i<n; i++){
+		cin>>arr[i];
+	}
+	cout<<"Second smallest element of array : "<<SsmallestElement(arr);
+
+	return 0;
+
+}
   
