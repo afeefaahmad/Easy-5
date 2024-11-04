@@ -3,7 +3,7 @@ Q2.LARGEST ELEMENT ARRAY
 Q3.SMALLEST ELEMENT ARRAY
 Q4.SECOND LARGEST ELEMENT ARRAY
 Q5.SECOND SMALLEST ELEMENT ARRAY
-Q6.
+Q6.ARMSTRONG NUMBER
 Q7.
 Q8.
 Q9.
@@ -180,4 +180,50 @@ int main() {
 	return 0;
 
 }
+
+A6.
+	//step1: number of digits;
+//step2: result= digits^ num of digits
+//step3: check if num==result;
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int num, originalNum,result=0,numDigits;
+	cout<<"Enter number: ";
+	cin>>num;
+	
+	originalNum=num;
+	//step1: number of digits
+	while(originalNum!=0) {
+		originalNum=originalNum%10;
+		originalNum=originalNum/10;
+		numDigits++;
+	}
+	originalNum=num;
+	//step2: calculate result i.e. digits^power
+	while(originalNum!=0) {
+		int rem=originalNum%10;
+		result+=pow(rem,numDigits);
+		originalNum=originalNum/10;
+		
+	}
+	cout<<result<<endl;
+	 cout<<num;
+	if(result==num) {
+		cout<<"Armstrong";
+	}
+	else{
+		cout<<"Not";
+	}
+	
+		
+
+	return 0;
+}
+
+A7.
+	
   
