@@ -1,13 +1,21 @@
-Q1.REVERSING ARRAY
-Q2.LARGEST ELEMENT ARRAY
-Q3.SMALLEST ELEMENT ARRAY
-Q4.SECOND LARGEST ELEMENT ARRAY
-Q5.SECOND SMALLEST ELEMENT ARRAY
-Q6.ARMSTRONG NUMBER
-Q7.
-Q8.
-Q9.
-Q10.
+A1.REVERSING ARRAY
+A2.LARGEST ELEMENT ARRAY
+A3.SMALLEST ELEMENT ARRAY
+A4.SECOND LARGEST ELEMENT ARRAY
+A5.SECOND SMALLEST ELEMENT ARRAY
+A6.ARMSTRONG NUMBER
+A7.
+A8.
+A9.
+A10.
+
+
+M1. PRIME NUMBER
+M2.
+M3.
+M4.
+M5.
+M6.
 
 
 
@@ -225,5 +233,55 @@ int main() {
 }
 
 A7.
+
 	
+M1. 
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n) {
+    if(n==0 ||n==1){
+	        return false;
+	    }
+	for(int i=2; i<n; i++) {
+		if(n%i==0){
+			return false;
+		}
+		break;
+	}
+	return true; 
+}
+int main() {
+	int n;
+	cin>>n;
+	if(isPrime(n)){
+	    cout<<"Prime";
+	}
+	else{
+	    cout<<"Not prime";
+	}
+    
+	return 0;
+}
+
+M2.
+
+M3.
+
+M4.
+
+M5.
+
+M6.
+
+M7.
+
+M8.
+
+
+
+
+
+
+
   
