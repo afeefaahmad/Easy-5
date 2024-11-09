@@ -11,7 +11,7 @@ A10.
 
 
 M1. PRIME NUMBER
-M2.
+M2. PALINDROME OF NUMBER
 M3.
 M4.
 M5.
@@ -265,6 +265,38 @@ int main() {
 }
 
 M2.
+#include <iostream>
+using namespace std;
+
+
+bool isPalindrome(int num) {
+	int temp=num;
+	int reverse=0;
+	while(temp>0) {
+		int last_digit=temp%10;
+		reverse=reverse*10+last_digit;
+		temp=temp/10;
+	}
+	
+	if(reverse!=num) {
+		return false;
+	}
+	return true;
+
+}
+
+int main( ) {
+	int num;
+	cin>>num;
+	int res=isPalindrome(num);
+	if(res) {
+		cout<<"Palindrome: ";
+	}
+	else{
+		cout<<"Not Palindrome: ";
+	}
+
+}
 
 M3.
 
