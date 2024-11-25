@@ -1,0 +1,29 @@
+Q1.Print even odd greater than 10 after removing duplicates from arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 18]
+Q2.
+Q3.
+Q4.
+Q5.
+
+
+A1.
+const arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 18]
+
+        const unique = arr.filter(function(v,i,a){    //removed duplicates
+            return arr.indexOf(v) === i;
+        })
+        console.log(unique);
+
+        const even = unique.filter(function(v,i,a){
+            return v>10 && v%2===0
+        });
+        console.log(even);
+        const odd = unique.filter(function(v,i,a){
+            return v>10 && v%2!==0
+        });
+        console.log(odd);
+
+A2.
+
+A3.
+
+A4.
