@@ -1,6 +1,6 @@
 Q1.Print even odd greater than 10 after removing duplicates from arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 18]
 Q2.Create function that takes string as argument and return number of vowels
-Q3.
+Q3.Fibonacci series : 0,1,1,2,3,5.... 
 Q4.
 Q5.
 
@@ -48,5 +48,30 @@ let findVowels = (sentence) => {
         console.log(findVowels("a quick brown fox jumps over"));
 
 A3.
+function fibonacci(n) {
+            let temp = 0;
+            let num1 = 0;
+            let num2 = 1;
+            if (n === 0) return num1;
+            if (n === 1) return num2;
+
+            for (let i = 2; i <= n; i++) {
+                temp = num1 + num2;
+                num1 = num2;
+                num2 = temp;
+            }
+            return num2;
+
+        }
+        console.log(fibonacci(5));
+--------------------using recursion ----------------------------
+function recurFibo(n){
+            if (n==0) return 0;
+            if (n==1) return 1;
+
+            return recurFibo(n-1)+recurFibo(n-2);
+        }
+        console.log(recurFibo(5));
+
 
 A4.
