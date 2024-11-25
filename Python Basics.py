@@ -1,3 +1,19 @@
+...................STRING.......................................
+Q1.Print each character of string
+Q2.Printing each word of string
+Q3.Count no. of occurence of specific character in string
+Q4.Count number of occurence of sprecific word in string
+Q5.Reverse a  string :god yzal revo pmuj xof nworb kciuq ehT
+Q6.Reverse order of string
+Q7.Count words in string
+Q8.Check substring
+Q9.Find longest word in sentence
+Q10.
+Q11.
+Q12.
+
+
+
 ##1.Print each character of string
 
 ##str = "The quick brown fox"
@@ -73,3 +89,29 @@
 ##        longestword = x
 ##
 ##print(longestword)
+
+......................................Math operations...............................
+Q1. Find factorial of number
+
+
+
+A1. 
+fact = 1
+n = int(input("Enter number: "))
+
+(using loop)
+for i in range(1,n+1):
+    fact = fact*i
+print(fact)
+
+(using recursion)
+def fact(n):
+    if(n<=1):
+        return 1
+    else:
+        return n*fact(n-1)
+        
+print(fact(n))
+
+
+
