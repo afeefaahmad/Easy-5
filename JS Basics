@@ -1,5 +1,5 @@
 Q1.Print even odd greater than 10 after removing duplicates from arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 18]
-Q2.
+Q2.Create function that takes string as argument and return number of vowels
 Q3.
 Q4.
 Q5.
@@ -23,6 +23,29 @@ const arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 1
         console.log(odd);
 
 A2.
+function findVowels(sentence){
+            vowel = " ";
+            for(let char of sentence.toLowerCase()){
+                if(char=='a'||char=='e'||char=='i'||char=='o'||char=='u'){
+                    vowel += char;
+                }
+            }
+            return vowel;
+        }
+        console.log(findVowels("a quick brown fox jumps over"));
+
+---------------arrow function----------------------------
+let findVowels = (sentence) => {
+            let vowels = " ";
+            for(let char of sentence.toLowerCase()){
+                if(char=='a'||char=='e'||char=='i'||char=='o'||char=='u'){
+                    vowels += char;
+                }
+            }
+            
+            return vowels;
+        }
+        console.log(findVowels("a quick brown fox jumps over"));
 
 A3.
 
