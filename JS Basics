@@ -1,11 +1,12 @@
 Q1.Print even odd greater than 10 after removing duplicates from arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 18]
 Q2.Create function that takes string as argument and return number of vowels
 Q3.Fibonacci series : 0,1,1,2,3,5.... 
-Q4.
+Q4.Write functions that apply for entire elements and return return arr after operation
+        //1.Multiply 2.Addition 3.Factorial of each element
 Q5.
 
 
-A1.
+A1🎵.
 const arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 18]
 
         const unique = arr.filter(function(v,i,a){    //removed duplicates
@@ -22,7 +23,7 @@ const arr = [12, 19, 10, 7, 14, 11, 16, 15, 17, 9, 10, 2, 11, 6, 5, 3, 14, 17, 1
         });
         console.log(odd);
 
-A2.
+A2🎵.
 function findVowels(sentence){
             vowel = " ";
             for(let char of sentence.toLowerCase()){
@@ -47,7 +48,7 @@ let findVowels = (sentence) => {
         }
         console.log(findVowels("a quick brown fox jumps over"));
 
-A3.
+A3🎵.
 function fibonacci(n) {
             let temp = 0;
             let num1 = 0;
@@ -74,4 +75,51 @@ function recurFibo(n){
         console.log(recurFibo(5));
 
 
-A4.
+A4🎵.
+var arr = [4,7,8,1,3,2,9];
+        
+        mulArr = []
+        function mul(arr){
+            let a;
+            for (a of arr ){
+                mulArr.push(a*3);
+            }
+            return mulArr;
+        }
+        console.log(mul(arr));
+
+
+        addArr = []
+        function add(arr){
+            let a;
+            for (a of arr ){
+                addArr.push(a+3);
+            }
+            return addArr;
+        }
+        //add(arr);
+        console.log(add(arr));
+        
+
+        //fact
+        //4 = >4.3.2.1
+
+        let factNum = []
+        function findFactorial(arr){
+            
+            for(let i=0; i<arr.length; i++){
+                let fact = 1;
+                
+                for(let j=1; j<=arr[i]; j++){
+                    fact = fact * j;
+
+                }   
+                factNum.push(fact);
+                //1.console.log(fact);
+            }
+            return factNum;  
+            
+        }
+        //1.findFactorial(arr); 
+        console.log(findFactorial(arr));
+
