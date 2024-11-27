@@ -117,5 +117,34 @@ def fact(n):
         
 print(fact(n))
 
+................................... Dictionary ..............................
+Q1.There are two list task is to make a dictionary such that first element of list1 assigned as key first element of list2 assisgned as value
+
+🧩1.
+a = ['a', 'b', 'c']
+b = ['x', 'y','z']
+
+##Method1 :using comprehension
+d = {a[i]:b[i] for i in range(len(a))}
+##print(d)
+
+##Method2 :using zip func
+d = dict(zip(a,b))
+print(d)
+
+##--or--
+##c = list(zip(a,b))
+##print(c)
+##d = {}
+##for x,y in c:
+##    d[x] = y
+##print(d)
+
+##Method3 :using conventional method
+d = {}
+for i in range(len(a)):
+    d[a[i]]=b[i]
+##print(d)
+
 
 
