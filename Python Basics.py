@@ -14,7 +14,7 @@ Q12.
 
 
 
-##1.Print each character of string
+🧩1.Print each character of string
 
 ##str = "The quick brown fox"
 ##for x in str:
@@ -27,11 +27,11 @@ Q12.
 ##    print(str[x])
 
     
-##2.Printing each word of string
+🧩2.Printing each word of string
 ##str1 = str.split(" ")
 ##print(str1)
 
-##3.Count no. of occurence of specific character in string
+🧩3.Count no. of occurence of specific character in string
 ##str = "The quick brown fox"
 ##count = 0
 ##for x in str:
@@ -39,7 +39,7 @@ Q12.
 ##        count = count +1
 ##print(count)
     
-##4.Count number of occurence of sprecific word in string
+🧩4.Count number of occurence of sprecific word in string
 ##str = "The quick brown fox quick quick"
 ##str1 = str.split(" ")
 ##count = 0
@@ -49,7 +49,7 @@ Q12.
 ##print(count)
 ##
 
-##5.Reverse a  string :god yzal revo pmuj xof nworb kciuq ehT
+🧩5.Reverse a  string :god yzal revo pmuj xof nworb kciuq ehT
 ##str = "The quick brown fox jump over lazy dog"
 ##for x in range(1,len(str)+1):
 ##    print(str[-x], end='')   
@@ -57,7 +57,7 @@ Q12.
 ##str1 = str[ : :-1]
 ##print(str1)
 
-##6.Reverse order of string
+🧩6.Reverse order of string
 ##str = "The quick brown fox jump over lazy dog"
 ##str1 = str.split(" ")
 ##str2 = str1[ : : -1] 
@@ -68,19 +68,19 @@ Q12.
 ##    sentence += x + " "
 ##print(sentence)
 
-##7.Count words in string
+🧩7.Count words in string
 ##str = "The quick brown fox jump over lazy dog"
 ##print(len(str))
 ##str1 = str.split(" ")
 ##print(len(str1))
 
-##8.Check substring
+🧩8.Check substring
 ##str = "The quick brown fox jump over lazy dog"
 ##sub = "quick brown"
 ##isPresent = sub in str
 ##print(isPresent)
 
-##9.Find longest word in sentence
+🧩9.Find longest word in sentence
 ##str = "The quick brown fox jump over lazy dog"
 ##sentence = str.split(" ")
 ##longestword = " "
