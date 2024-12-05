@@ -5,5 +5,21 @@ Q1> Make toggle button for light and dark theme
 Q2>
 
 🏀A1.
+    //<button id="btn1">Toggle Button</button>
 
+    let ToggleBtn = document.querySelector('#btn1');
+    let bdy = document.querySelector('body');
+    var count=1;
+    ToggleBtn.addEventListener('click', ()=>{
+      count++;
+      if(count %2 == 0){
+
+        bdy.style.backgroundColor = "black";
+      }
+      else{
+
+        bdy.style.backgroundColor = "white";
+      }
+    });
+    
 
